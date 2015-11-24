@@ -1,0 +1,140 @@
+#   BULLETPROOF .52.8 >>>>>>> SECURE .HTACCESS     
+
+# PHP/PHP.INI HANDLER/CACHE CODE
+# Use BPS Custom Code to add php/php.ini Handler and Cache htaccess code and to save it permanently.
+# Most Hosts do not have/use/require php/php.ini Handler htaccess code
+
+# CUSTOM CODE TURN OFF YOUR SERVER SIGNATURE
+ServerSignature Off
+
+# CUSTOM CODE DIRECTORY LISTING/DIRECTORY INDEX
+Options -Indexes
+
+# CUSTOM CODE BRUTE FORCE LOGIN PAGE PROTECTION
+# XML-RPC DDoS PROTECTION
+# You can whitelist your IP address if you use A Weblog Client
+# or want to whitelist your IP address for any other reasons.
+# Example: uncomment #Allow from x.x.x. by deleting the # sign and
+# replace the x's with your actual IP address. Allow from 99.88.77.
+# Note: It is recommended that you use 3 octets x.x.x. of your IP address
+# instead of 4 octets x.x.x.x of your IP address.
+
+
+<FilesMatch "^(xmlrpc\.php)">
+Order Deny,Allow
+# Whitelist Jetpack/ Automattic CIDR IP Address Blocks
+Allow from 192.0.64.0/18
+Allow from 209.15.0.0/16
+Allow from 66.155.0.0/17
+Allow from tagamon.com
+Allow from wordpress.com
+Deny from all
+</FilesMatch>
+
+
+# CUSTOM CODE ERROR LOGGING AND TRACKING
+ErrorDocument 400 /wp-content/plugins/bulletproof-security/400.php
+ErrorDocument 401 default
+ErrorDocument 403 /wp-content/plugins/bulletproof-security/403.php
+ErrorDocument 404 /404.php
+ErrorDocument 410 /wp-content/plugins/bulletproof-security/410.php
+
+# CUSTOM CODE DENY ACCESS TO PROTECTED SERVER FILES AND FOLDERS
+RedirectMatch 403 \.(htaccess|htpasswd|errordocs|logs)$
+
+# CUSTOM CODE WP-ADMIN/INCLUDES
+# WP-ADMIN/INCLUDES
+# Use BPS Custom Code to remove this code permanently.
+RewriteEngine On
+RewriteBase /
+RewriteRule ^wp-admin/includes/ - [F]
+RewriteRule !^wp-includes/ - [S=3]
+RewriteRule ^wp-includes/[^/]+\.php$ - [F]
+RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F]
+RewriteRule ^wp-includes/theme-compat/ - [F]
+
+# WP REWRITE LOOP START
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+# CUSTOM CODE REQUEST METHODS FILTERED
+# REQUEST METHODS FILTERED
+# If you want to allow HEAD Requests use BPS Custom Code and
+# remove/delete HEAD| from the Request Method filter.
+# Example: RewriteCond %{REQUEST_METHOD} ^(TRACE|DELETE|TRACK|DEBUG) [NC]
+# The TRACE, DELETE, TRACK and DEBUG Request methods should never be removed.
+RewriteCond %{REQUEST_METHOD} ^(HEAD|TRACE|DELETE|TRACK|DEBUG) [NC]
+RewriteRule ^(.*)$ - [F]
+
+# PLUGINS/THEMES AND VARIOUS EXPLOIT FILTER SKIP RULES
+# To add plugin/theme skip/bypass rules use BPS Custom Code.
+# The [S] flag is used to skip following rules. Skip rule [S=12] will skip 12 following RewriteRules.
+# The skip rules MUST be in descending consecutive number order: 12, 11, 10, 9...
+# If you delete a skip rule, change the other skip rule numbers accordingly.
+# Examples: If RewriteRule [S=5] is deleted than change [S=6] to [S=5], [S=7] to [S=6], etc.
+# If you add a new skip rule above skip rule 12 it will be skip rule 13: [S=13]
+
+# Adminer MySQL management tool data populate
+RewriteCond %{REQUEST_URI} ^/wp-content/plugins/adminer/ [NC]
+RewriteRule . - [S=12]
+# Comment Spam Pack MU Plugin - CAPTCHA images not displaying 
+RewriteCond %{REQUEST_URI} ^/wp-content/mu-plugins/custom-anti-spam/ [NC]
+RewriteRule . - [S=11]
+# Peters Custom Anti-Spam display CAPTCHA Image
+RewriteCond %{REQUEST_URI} ^/wp-content/plugins/peters-custom-anti-spam-image/ [NC] 
+RewriteRule . - [S=10]
+# Status Updater plugin fb connect
+RewriteCond %{REQUEST_URI} ^/wp-content/plugins/fb-status-updater/ [NC] 
+RewriteRule . - [S=9]
+# Stream Video Player - Adding FLV Videos Blocked
+RewriteCond %{REQUEST_URI} ^/wp-content/plugins/stream-video-player/ [NC]
+RewriteRule . - [S=8]
+# XCloner 404 or 403 error when updating settings
+RewriteCond %{REQUEST_URI} ^/wp-content/plugins/xcloner-backup-and-restore/ [NC]
+RewriteRule . - [S=7]
+# BuddyPress Logout Redirect
+RewriteCond %{QUERY_STRING} action=logout&redirect_to=http%3A%2F%2F(.*) [NC]
+RewriteRule . - [S=6]
+# redirect_to=
+RewriteCond %{QUERY_STRING} redirect_to=(.*) [NC]
+RewriteRule . - [S=5]
+# Login Plugins Password Reset And Redirect 1
+RewriteCond %{QUERY_STRING} action=resetpass&key=(.*) [NC]
+RewriteRule . - [S=4]
+# Login Plugins Password Reset And Redirect 2
+RewriteCond %{QUERY_STRING} action=rp&key=(.*) [NC]
+RewriteRule . - [S=3]
+
+# TIMTHUMB FORBID RFI and MISC FILE SKIP/BYPASS RULE
+# Use BPS Custom Code to modify/edit/change this code and to save it permanently.
+# Remote File Inclusion (RFI) security rules
+# Note: Only whitelist your additional domains or files if needed - do not whitelist hacker domains or files
+RewriteCond %{QUERY_STRING} ^.*(http|https|ftp)(%3A|:)(%2F|/)(%2F|/)(w){0,3}.?(blogger|picasa|blogspot|tsunami|petapolitik|photobucket|imgur|imageshack|wordpress\.com|img\.youtube|tinypic\.com|upload\.wikimedia|kkc|start-thegame).*$ [NC,OR]
+RewriteCond %{THE_REQUEST} ^.*(http|https|ftp)(%3A|:)(%2F|/)(%2F|/)(w){0,3}.?(blogger|picasa|blogspot|tsunami|petapolitik|photobucket|imgur|imageshack|wordpress\.com|img\.youtube|tinypic\.com|upload\.wikimedia|kkc|start-thegame).*$ [NC]
+RewriteRule .* index.php [F]
+# 
+# Example: Whitelist additional misc files: (example\.php|another-file\.php|phpthumb\.php|thumb\.php|thumbs\.php)
+RewriteCond %{REQUEST_URI} (timthumb\.php|phpthumb\.php|thumb\.php|thumbs\.php) [NC]
+# Example: Whitelist additional website domains: RewriteCond %{HTTP_REFERER} ^.*(YourWebsite.com|AnotherWebsite.com).*
+RewriteCond %{HTTP_REFERER} ^.*tagamon.com.*
+RewriteRule . - [S=1]
+
+# CUSTOM CODE BPSQSE BPS QUERY STRING EXPLOITS
+RewriteCond %{QUERY_STRING} (sp_executesql) [NC]
+RewriteRule ^(.*)$ - [F]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+# WP REWRITE LOOP END
+
+# CUSTOM CODE DENY BROWSER ACCESS TO THESE FILES
+<FilesMatch "^(wp-config\.php|php\.ini|php5\.ini|readme\.html|bb-config\.php)">
+Order Allow,Deny
+Deny from all
+#Allow from 127.0.0.1
+</FilesMatch>
+
+# HOTLINKING/FORBID COMMENT SPAMMERS/BLOCK BOTS/BLOCK IP/REDIRECT CODE
+# PLACEHOLDER ONLY
+# Use BPS Custom Code to add custom code and save it permanently here.

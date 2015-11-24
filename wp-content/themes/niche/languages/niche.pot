@@ -1,0 +1,653 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Niche\n"
+"POT-Creation-Date: 2015-10-08 00:19+0530\n"
+"PO-Revision-Date: 2015-05-29 16:30+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:12
+msgid "404 - Article Not Found"
+msgstr ""
+
+#: 404.php:26
+msgid "Epic 404 - Article Not Found"
+msgstr ""
+
+#: 404.php:27
+msgid "This is embarassing. We can't find what you were looking for."
+msgstr ""
+
+#: 404.php:28
+msgid ""
+"Whatever you were looking for was not found, but maybe try looking again or "
+"search using the form below."
+msgstr ""
+
+#: author.php:14
+msgid "Published by"
+msgstr ""
+
+#: comments.php:19
+#, php-format
+msgid "1 Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: footer.php:42
+#, php-format
+msgid "Powered by %1$s and %2$s "
+msgstr ""
+
+#: functions.php:22
+msgid "Top Header Menu"
+msgstr ""
+
+#: functions.php:86
+msgctxt "OpenSans font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:117
+msgid "Search here"
+msgstr ""
+
+#: functions/breadcrumbs.php:10 index.php:22
+msgid "Home"
+msgstr ""
+
+#: functions/breadcrumbs.php:29
+msgid "Archive by category"
+msgstr ""
+
+#: functions/breadcrumbs.php:31
+msgid "Search Results For "
+msgstr ""
+
+#: functions/breadcrumbs.php:90
+msgid "Posts tagged"
+msgstr ""
+
+#: functions/breadcrumbs.php:94
+msgid "Articles Published by"
+msgstr ""
+
+#: functions/breadcrumbs.php:96
+msgid "Error 404"
+msgstr ""
+
+#: functions/breadcrumbs.php:102
+msgid "Page"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:52 functions/tgm-plugins.php:28
+msgid "Install Required Plugins"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:53 functions/tgm-plugins.php:29
+msgid "Install Plugins"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:54 functions/tgm-plugins.php:30
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:55
+msgid "Something went wrong."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:56 functions/tgm-plugins.php:32
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:57 functions/tgm-plugins.php:33
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:58 functions/tgm-plugins.php:34
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:59 functions/tgm-plugins.php:35
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:60 functions/tgm-plugins.php:36
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:61 functions/tgm-plugins.php:37
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:62 functions/tgm-plugins.php:38
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:63 functions/tgm-plugins.php:39
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:64 functions/tgm-plugins.php:40
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:65 functions/tgm-plugins.php:41
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:66 functions/tgm-plugins.php:42
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:67
+msgid "Return to the dashboard"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:68
+#: functions/class-tgm-plugin-activation.php:1024 functions/tgm-plugins.php:43
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:69
+#: functions/class-tgm-plugin-activation.php:837
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions/class-tgm-plugin-activation.php:70
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:71
+msgid "Dismiss this notice"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:255
+#: functions/class-tgm-plugin-activation.php:656
+#: functions/class-tgm-plugin-activation.php:1130
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:557
+msgid "Private Repository"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:560
+msgid "Pre-Packaged"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:562
+msgid "WordPress Repository"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:564
+msgid "Required"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:564
+msgid "Recommended"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:566
+msgid "Not Installed"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:568
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:614
+#: functions/class-tgm-plugin-activation.php:673
+msgid "Install"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:632
+#: functions/class-tgm-plugin-activation.php:674
+msgid "Activate"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:656
+msgid "No plugins to install or activate"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:664
+msgid "Plugin"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:665
+msgid "Source"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:666
+msgid "Type"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:667
+msgid "Status"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:739
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:820
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1011
+msgid "Install package not available."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1013
+#, php-format
+msgid "Downloading install package from %1$s %s %1$s"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1016
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1017
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1018
+msgid "Plugin install failed."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1019
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1023
+msgid "Plugin activation failed."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1063
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1064
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1064
+#: functions/class-tgm-plugin-activation.php:1073
+msgid "Show Details"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1064
+#: functions/class-tgm-plugin-activation.php:1073
+msgid "Hide Details"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1065
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1066
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1070
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1071
+#, php-format
+msgid "An error occurred while installing %1$s: %2$s."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1072
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1073
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1074
+msgid "All installations have been completed."
+msgstr ""
+
+#: functions/class-tgm-plugin-activation.php:1075
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: functions/custom-widgets.php:13
+msgid "Contact widgets"
+msgstr ""
+
+#: functions/custom-widgets.php:32
+msgid "Widget Title"
+msgstr ""
+
+#: functions/custom-widgets.php:39 functions/custom-widgets.php:102
+msgid "Address"
+msgstr ""
+
+#: functions/custom-widgets.php:46 functions/custom-widgets.php:103
+msgid "Phone"
+msgstr ""
+
+#: functions/custom-widgets.php:53 functions/custom-widgets.php:104
+msgid "Fax"
+msgstr ""
+
+#: functions/custom-widgets.php:60 functions/custom-widgets.php:105
+msgid "Email"
+msgstr ""
+
+#: functions/custom-widgets.php:67
+msgid "Website"
+msgstr ""
+
+#: functions/custom-widgets.php:106
+msgid "Web"
+msgstr ""
+
+#: functions/tgm-plugins.php:11
+msgid "Meta Slider"
+msgstr ""
+
+#: functions/tgm-plugins.php:31
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: functions/tgm-plugins.php:44
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: functions/theme-customizer.php:5
+msgid "Basic Settings"
+msgstr ""
+
+#: functions/theme-customizer.php:11
+msgid "Social Settings"
+msgstr ""
+
+#: functions/theme-customizer.php:19
+msgid "Home Page Settings"
+msgstr ""
+
+#: functions/theme-customizer.php:24
+msgid "Slider Section"
+msgstr ""
+
+#: functions/theme-customizer.php:31
+msgid "Our path to Perfection"
+msgstr ""
+
+#: functions/theme-customizer.php:37
+msgid "Blog Section"
+msgstr ""
+
+#: functions/theme-customizer.php:52
+msgid "Logo (Recommended size 220 x 120)"
+msgstr ""
+
+#: functions/theme-customizer.php:65
+msgid "Breadcrumbs Backgroung Image (Recommended Size : 1350px * 200px)"
+msgstr ""
+
+#: functions/theme-customizer.php:79 functions/theme-customizer.php:227
+msgid "Blog Title"
+msgstr ""
+
+#: functions/theme-customizer.php:92
+msgid "Copyright text"
+msgstr ""
+
+#: functions/theme-customizer.php:105
+msgid "Twitter URL"
+msgstr ""
+
+#: functions/theme-customizer.php:117
+msgid "Facebook URL"
+msgstr ""
+
+#: functions/theme-customizer.php:129
+msgid "YouTube URL"
+msgstr ""
+
+#: functions/theme-customizer.php:141
+msgid "Pinterest URL"
+msgstr ""
+
+#: functions/theme-customizer.php:153
+msgid "RSS Feed URL"
+msgstr ""
+
+#: functions/theme-customizer.php:166 functions/theme-customizer.php:300
+msgid "Meta Slider Id"
+msgstr ""
+
+#: functions/theme-customizer.php:179
+msgid "Perfection Title"
+msgstr ""
+
+#: functions/theme-customizer.php:190
+msgid "Perfection Info"
+msgstr ""
+
+#: functions/theme-customizer.php:200
+msgid "Image (Recommended size 500 x 500)"
+msgstr ""
+
+#: functions/theme-customizer.php:212
+msgid "Background Image (Recommended size 1280 x 853)"
+msgstr ""
+
+#: functions/theme-customizer.php:239
+msgid "Blog Info"
+msgstr ""
+
+#: functions/theme-customizer.php:287
+msgid "Select Category"
+msgstr ""
+
+#: functions/theme-default-setup.php:7
+msgid "Main Sidebar"
+msgstr ""
+
+#: functions/theme-default-setup.php:9
+msgid "Main sidebar that appears on the right."
+msgstr ""
+
+#: functions/theme-default-setup.php:17
+msgid "Footer Area One"
+msgstr ""
+
+#: functions/theme-default-setup.php:19
+msgid "Footer Area One that appears on footer."
+msgstr ""
+
+#: functions/theme-default-setup.php:27
+msgid "Footer Area Two"
+msgstr ""
+
+#: functions/theme-default-setup.php:29
+msgid "Footer Area Two that appears on footer."
+msgstr ""
+
+#: functions/theme-default-setup.php:37
+msgid "Footer Area Three"
+msgstr ""
+
+#: functions/theme-default-setup.php:39
+msgid "Footer Area Three that appears on footer."
+msgstr ""
+
+#: functions/theme-default-setup.php:47
+msgid "Footer Area Four"
+msgstr ""
+
+#: functions/theme-default-setup.php:49
+msgid "Footer Area Four that appears on footer."
+msgstr ""
+
+#: functions/theme-default-setup.php:72
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: functions/theme-default-setup.php:73
+msgid "By : "
+msgstr ""
+
+#: functions/theme-default-setup.php:75
+msgid "Category : "
+msgstr ""
+
+#: functions/theme-default-setup.php:76
+msgid "Tags : "
+msgstr ""
+
+#: functions/theme-default-setup.php:78
+msgid "Comment : 0"
+msgstr ""
+
+#: functions/theme-default-setup.php:78
+msgid "Comment : 1"
+msgstr ""
+
+#: functions/theme-default-setup.php:78
+msgid "Comments : %"
+msgstr ""
+
+#: functions/theme-default-setup.php:93
+msgctxt "comment form placeholder"
+msgid "Name *"
+msgstr ""
+
+#: functions/theme-default-setup.php:105
+msgctxt "comment form placeholder"
+msgid "Email Id *"
+msgstr ""
+
+#: functions/theme-default-setup.php:116
+msgctxt "comment form placeholder"
+msgid "Website URL"
+msgstr ""
+
+#: functions/theme-default-setup.php:132
+msgctxt "comment form placeholder"
+msgid "Comment"
+msgstr ""
+
+#: index.php:17 index.php:27 page-template/front-page.php:26
+msgid "Our Blog"
+msgstr ""
+
+#: page-template/front-page.php:123
+msgid "iphone"
+msgstr ""
+
+#: search.php:13
+msgid "Search results for"
+msgstr ""
+
+#: search.php:59
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords"
+msgstr ""
+
+#: single.php:40
+msgid "Pages:"
+msgstr ""
+
+#: tag.php:13
+msgid "Tag"
+msgstr ""
+
+#: theme-options/theme-option.php:13
+msgid "Niche Options"
+msgstr ""
+
+#: theme-options/theme-option.php:14
+msgid "Niche Pro Features"
+msgstr ""
+
+#: theme-options/theme-option.php:47
+msgid "PRO Theme Features"
+msgstr ""

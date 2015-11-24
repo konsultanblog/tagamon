@@ -1,0 +1,27 @@
+Version 1.0
+i)  Theme Submitted for approval
+
+Version 1.0.1
+i)	Fixed css issues.
+
+Version 1.0.2
+i)	NA.
+
+Version 1.0.3
+i)	Copyright changes
+
+
+Version 1.0.4
+i) Widget change in new function. 
+ii)	Remove Favicons handled in header.php and options.
+iii) Change image upload sanitized with esc_url_raw() instead of esc_attr().
+iv) Add capability in add_panel(), add_section() and add_setting() in options.
+v) Copyright text variable name change copyright_url_setting to copyright_text.
+vi) Add un-minified version of html5.js
+
+Version 1.0.5
+i) Change copyright 2014 to 2015 in style.css
+ii) Add string translated in theme-customizer.php.
+
+Version 1.0.6
+i) Added PRO features Image

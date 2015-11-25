@@ -39,7 +39,9 @@
 				<div class="row">
 					<div class="col-md-6 col-sm-6 copyright-text">
 					    <p>
-						<?php printf( __( 'Powered by %1$s and %2$s ', 'niche' ), '<a href="http://wordpress.org" target="_blank">WordPress</a>', '<a href="http://fasterthemes.com/wordpress-themes/niche" target="_blank">Niche</a>' ); 
+						<?php
+/*						printf( __( 'Powered by %1$s and %2$s ', 'niche' ), '<a href="http://wordpress.org" target="_blank">WordPress</a>', '<a href="http://fasterthemes.com/wordpress-themes/niche" target="_blank">Niche</a>' ); 
+*/
 						
 						 $niche_copyright_check = get_theme_mod( 'copyright_text' );
 							if( $niche_copyright_check != '' ) {
@@ -85,6 +87,7 @@
 	</div>
 </footer>
 <?php wp_footer(); ?>
+<?php include('analitics.php'); ?>
 </body>
 </html>
 

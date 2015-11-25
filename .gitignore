@@ -12,3 +12,6 @@ wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/bps-backup/logs/
+wp-content/files/*
+!wp-content/files/index.php
+
